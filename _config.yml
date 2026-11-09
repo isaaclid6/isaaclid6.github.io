@@ -1,0 +1,9 @@
+title: MassEnemy 개발일지
+description: 저그 1000마리와 싸우는 스타크래프트 풍 FPS를 언리얼 5로 혼자 만드는 기록
+lang: ko
+theme: minima
+timezone: Asia/Seoul
+permalink: /:year/:month/:day/:title/
+minima:
+  social_links:
+    github: isaaclid6
