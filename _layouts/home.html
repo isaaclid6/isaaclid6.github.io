@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="home">
+  {{ content }}
+  <h2 class="post-list-heading">글 목록</h2>
+  <div class="cards">
+    {% for post in site.posts %}
+    <a class="card" href="{{ post.url | relative_url }}">
+      <img src="{{ post.thumb | default: post.image | relative_url }}" loading="lazy" alt="">
+      <span class="card-title">{{ post.title }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
