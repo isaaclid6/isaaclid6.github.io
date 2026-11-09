@@ -5,11 +5,15 @@
 .toc { margin: 0 0 24px 20px; }
 .meta-line { color: #828282; }
 .summary { font-style: italic; color: #555; }
-.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px; margin: 14px 0 4px; }
+.gallery { display: grid; gap: 6px; margin: 14px 0 4px; }
 .gallery img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; border-radius: 3px; }
-.gallery.one { display: block; }
-.gallery.one img { aspect-ratio: auto; }
+.gallery.n1 { max-width: 760px; }
+.gallery.n1 img { aspect-ratio: auto; }
+.gallery.n2, .gallery.n4 { grid-template-columns: repeat(2, 1fr); }
+.gallery.n3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 600px) { .gallery.n3 { grid-template-columns: repeat(2, 1fr); } }
 .caption { margin-bottom: 26px; }
+.caption.textonly { border-left: 3px solid #d0d0d0; padding-left: 10px; margin: 10px 0 14px; }
 .caption .time { color: #828282; font-size: 0.85em; margin-right: 6px; }
 h2 { margin-top: 40px; border-top: 1px solid #e8e8e8; padding-top: 16px; }
 h2 small { color: #828282; font-size: 0.6em; }
